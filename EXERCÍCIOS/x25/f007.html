@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>  Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <p>  
+<label for="iest">Estado:   </label>    
+<select name="estado" id="iest">
+
+<option value="" selected>---Escolha seu estado---</option>
+<optgroup label="Grupo 1">
+    <option value="L">L</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+</optgroup>
+
+    <optgroup label="Grupo 2">
+        <option value="D">D</option>
+        <option value="T">T</option>
+        <option value="V">V</option>
+    </optgroup>
+    </label>
+    </p>
+    </select>
+
+    <p> 
+      <label  for="lcor">Cor:</label>  
+        <input type="text" name="cor" id="lcor" list="cores" placeholder="Digite sua cor favorita">
+<datalist id="cores">    
+        <option value="Azul">
+        <option value="Verde">
+        <option value="Vermelho">
+    </datalist><br><br>
+
+    <textarea name="msg" id="lmsg" cols="40" rows="5" placeholder="Digite sua mensagem"></textarea><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
