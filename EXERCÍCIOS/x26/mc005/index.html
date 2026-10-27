@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midea queries</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+</head>
+<body onresize="mudouTamanho">
+    <header>
+        <h1>ClassUp</h1>
+        <i class="material-icons" id="menu" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>   Meu site   </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde distinctio error. Provident corporis eius, molestiae odio facilis possimus assumenda magni officia eveniet, sequi reprehenderit inventore commodi voluptate at itaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde distinctio error. Provident corporis eius, molestiae odio facilis possimus assumenda magni officia eveniet, sequi reprehenderit inventore commodi voluptate at itaque. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde distinctio error. Provident corporis eius, molestiae odio facilis possimus assumenda magni officia eveniet, sequi reprehenderit inventore commodi voluptate at itaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde distinctio error. Provident corporis eius, molestiae odio facilis possimus assumenda magni officia eveniet, sequi reprehenderit inventore commodi voluptate at itaque. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde distinctio error. Provident corporis eius, molestiae odio facilis possimus assumenda magni officia eveniet, sequi reprehenderit inventore commodi voluptate at itaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde distinctio error. Provident corporis eius, molestiae odio facilis possimus assumenda magni officia eveniet, sequi reprehenderit inventore commodi voluptate at itaque. </p>
+        </article>
+    </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='block'
+            }
+        }
+    </script>
+</body>
+</html>
